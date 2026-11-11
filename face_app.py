@@ -24,7 +24,7 @@ import face_recognition
 print("Loading Advanced Biometric Models...")
 
 # --- AUTHORIZED DATABASE SETUP ---
-persons_data = [("pandey.jpg", "HRIDYESH KUMAR PANDEY")]
+persons_data = [("hridyesh.jpg", "HRIDYESH KUMAR PANDEY")]
 known_face_encodings = [face_recognition.face_encodings(face_recognition.load_image_file(img))[0] for img, _ in persons_data]
 known_face_names = [name for _, name in persons_data]
 
